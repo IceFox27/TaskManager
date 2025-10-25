@@ -23,7 +23,7 @@ namespace TaskManagerApplication
 
         private void CloseButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void CloseButton_MouseEnter(object sender, EventArgs e)
@@ -74,12 +74,17 @@ namespace TaskManagerApplication
 
             if (table.Rows.Count > 0)
             {
-                MessageBox.Show("Yes");
+                this.Hide();
+                MainForm mainForm = new MainForm();
+                mainForm.Show();
             }
-            else
-            {
-                MessageBox.Show("No");
-            }
+        }
+
+        private void RegisterLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegisterForm registerForm = new RegisterForm();
+            registerForm.Show();
         }
     }
 }

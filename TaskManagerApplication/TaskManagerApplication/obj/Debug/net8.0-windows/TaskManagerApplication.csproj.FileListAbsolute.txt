@@ -20,3 +20,5 @@ D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplicat
 D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\TaskManagerApplication\bin\Debug\net8.0-windows\MySql.Data.xml
 D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\TaskManagerApplication\obj\Debug\net8.0-windows\TaskManagerApplication.csproj.AssemblyReference.cache
 D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\TaskManagerApplication\obj\Debug\net8.0-windows\TaskMana.A9E67B6A.Up2Date
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\TaskManagerApplication\obj\Debug\net8.0-windows\TaskManagerApplication.RegisterForm.resources
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\TaskManagerApplication\obj\Debug\net8.0-windows\TaskManagerApplication.MainForm.resources
