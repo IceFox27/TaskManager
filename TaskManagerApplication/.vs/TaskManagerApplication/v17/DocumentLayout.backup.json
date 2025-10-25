@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\\u041C\u043E\u044F \u043F\u0430\u043F\u043A\u0430\\\u041B\u0430\u0431\u044B\\\u0422\u0438\u041E\u041F\u041E\\Program\\TaskManager\\TaskManagerApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{569241A7-B193-4824-B2FA-5B7CFAD78667}|TaskManagerApplication\\TaskManagerApplication.csproj|d:\\\u043C\u043E\u044F \u043F\u0430\u043F\u043A\u0430\\\u043B\u0430\u0431\u044B\\\u0442\u0438\u043E\u043F\u043E\\program\\taskmanager\\taskmanagerapplication\\taskmanagerapplication\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{569241A7-B193-4824-B2FA-5B7CFAD78667}|TaskManagerApplication\\TaskManagerApplication.csproj|solutionrelative:taskmanagerapplication\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{569241A7-B193-4824-B2FA-5B7CFAD78667}|TaskManagerApplication\\TaskManagerApplication.csproj|d:\\\u043C\u043E\u044F \u043F\u0430\u043F\u043A\u0430\\\u043B\u0430\u0431\u044B\\\u0442\u0438\u043E\u043F\u043E\\program\\taskmanager\\taskmanagerapplication\\taskmanagerapplication\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{569241A7-B193-4824-B2FA-5B7CFAD78667}|TaskManagerApplication\\TaskManagerApplication.csproj|solutionrelative:taskmanagerapplication\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{569241A7-B193-4824-B2FA-5B7CFAD78667}|TaskManagerApplication\\TaskManagerApplication.csproj|d:\\\u043C\u043E\u044F \u043F\u0430\u043F\u043A\u0430\\\u043B\u0430\u0431\u044B\\\u0442\u0438\u043E\u043F\u043E\\program\\taskmanager\\taskmanagerapplication\\taskmanagerapplication\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{569241A7-B193-4824-B2FA-5B7CFAD78667}|TaskManagerApplication\\TaskManagerApplication.csproj|solutionrelative:taskmanagerapplication\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\\u041C\u043E\u044F \u043F\u0430\u043F\u043A\u0430\\\u041B\u0430\u0431\u044B\\\u0422\u0438\u041E\u041F\u041E\\Program\\TaskManager\\TaskManagerApplication\\TaskManagerApplication\\Form1.cs",
-              "RelativeDocumentMoniker": "TaskManagerApplication\\Form1.cs",
-              "ToolTip": "D:\\\u041C\u043E\u044F \u043F\u0430\u043F\u043A\u0430\\\u041B\u0430\u0431\u044B\\\u0422\u0438\u041E\u041F\u041E\\Program\\TaskManager\\TaskManagerApplication\\TaskManagerApplication\\Form1.cs [Design]",
-              "RelativeToolTip": "TaskManagerApplication\\Form1.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\\u041C\u043E\u044F \u043F\u0430\u043F\u043A\u0430\\\u041B\u0430\u0431\u044B\\\u0422\u0438\u041E\u041F\u041E\\Program\\TaskManager\\TaskManagerApplication\\TaskManagerApplication\\LoginForm.cs",
+              "RelativeDocumentMoniker": "TaskManagerApplication\\LoginForm.cs",
+              "ToolTip": "D:\\\u041C\u043E\u044F \u043F\u0430\u043F\u043A\u0430\\\u041B\u0430\u0431\u044B\\\u0422\u0438\u041E\u041F\u041E\\Program\\TaskManager\\TaskManagerApplication\\TaskManagerApplication\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "TaskManagerApplication\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T06:06:47.552Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-25T09:08:37.575Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "D:\\\u041C\u043E\u044F \u043F\u0430\u043F\u043A\u0430\\\u041B\u0430\u0431\u044B\\\u0422\u0438\u041E\u041F\u041E\\Program\\TaskManager\\TaskManagerApplication\\TaskManagerApplication\\LoginForm.cs",
+              "RelativeDocumentMoniker": "TaskManagerApplication\\LoginForm.cs",
+              "ToolTip": "D:\\\u041C\u043E\u044F \u043F\u0430\u043F\u043A\u0430\\\u041B\u0430\u0431\u044B\\\u0422\u0438\u041E\u041F\u041E\\Program\\TaskManager\\TaskManagerApplication\\TaskManagerApplication\\LoginForm.cs",
+              "RelativeToolTip": "TaskManagerApplication\\LoginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T08:47:57.419Z",
+              "EditorCaption": ""
             }
           ]
         }
