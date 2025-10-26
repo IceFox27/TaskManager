@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {}
+    "net8.0-windows7.0": {
+      "AccountWorking/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/AccountWorking.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AccountWorking.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "AccountWorking/1.0.0": {
+      "type": "project",
+      "path": "../AccountWorking/AccountWorking.csproj",
+      "msbuildProject": "../AccountWorking/AccountWorking.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": []
+    "net8.0-windows7.0": [
+      "AccountWorking >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\erofe\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Моя папка\\Лабы\\ТиОПО\\Program\\TaskManager\\TaskManagerApplication\\AccountWorking\\AccountWorking.csproj": {
+              "projectPath": "D:\\Моя папка\\Лабы\\ТиОПО\\Program\\TaskManager\\TaskManagerApplication\\AccountWorking\\AccountWorking.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

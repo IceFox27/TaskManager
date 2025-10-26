@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             mainPanel = new Panel();
+            CheckPasswordStrength = new Button();
+            registerLabel = new Label();
             userSurnameField = new TextBox();
             userNameField = new TextBox();
             buttonRegister = new Button();
@@ -39,7 +41,6 @@
             panel2 = new Panel();
             closeButton = new Label();
             label1 = new Label();
-            registerLabel = new Label();
             mainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -49,6 +50,7 @@
             // mainPanel
             // 
             mainPanel.BackColor = Color.FromArgb(49, 32, 104);
+            mainPanel.Controls.Add(CheckPasswordStrength);
             mainPanel.Controls.Add(registerLabel);
             mainPanel.Controls.Add(userSurnameField);
             mainPanel.Controls.Add(userNameField);
@@ -65,6 +67,35 @@
             mainPanel.TabIndex = 1;
             mainPanel.MouseDown += MainPanel_MouseDown;
             mainPanel.MouseMove += MainPanel_MouseMove;
+            // 
+            // CheckPasswordStrength
+            // 
+            CheckPasswordStrength.BackColor = Color.FromArgb(20, 198, 193);
+            CheckPasswordStrength.FlatAppearance.BorderSize = 0;
+            CheckPasswordStrength.FlatAppearance.MouseDownBackColor = Color.FromArgb(9, 95, 92);
+            CheckPasswordStrength.FlatAppearance.MouseOverBackColor = Color.FromArgb(34, 116, 138);
+            CheckPasswordStrength.FlatStyle = FlatStyle.Flat;
+            CheckPasswordStrength.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            CheckPasswordStrength.ForeColor = Color.White;
+            CheckPasswordStrength.Location = new Point(495, 280);
+            CheckPasswordStrength.Name = "CheckPasswordStrength";
+            CheckPasswordStrength.Size = new Size(111, 32);
+            CheckPasswordStrength.TabIndex = 9;
+            CheckPasswordStrength.Text = "Проверка";
+            CheckPasswordStrength.UseVisualStyleBackColor = false;
+            CheckPasswordStrength.Click += CheckPasswordStrength_Click_1;
+            // 
+            // registerLabel
+            // 
+            registerLabel.AutoSize = true;
+            registerLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            registerLabel.ForeColor = Color.White;
+            registerLabel.Location = new Point(341, 411);
+            registerLabel.Name = "registerLabel";
+            registerLabel.Size = new Size(100, 15);
+            registerLabel.TabIndex = 7;
+            registerLabel.Text = "Авторизоваться";
+            registerLabel.Click += RegisterLabel_Click;
             // 
             // userSurnameField
             // 
@@ -177,18 +208,6 @@
             label1.Text = "Регистрация";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // registerLabel
-            // 
-            registerLabel.AutoSize = true;
-            registerLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            registerLabel.ForeColor = Color.White;
-            registerLabel.Location = new Point(341, 411);
-            registerLabel.Name = "registerLabel";
-            registerLabel.Size = new Size(100, 15);
-            registerLabel.TabIndex = 7;
-            registerLabel.Text = "Авторизоваться";
-            registerLabel.Click += RegisterLabel_Click;
-            // 
             // RegisterForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -221,5 +240,6 @@
         private TextBox userSurnameField;
         private TextBox userNameField;
         private Label registerLabel;
+        private Button CheckPasswordStrength;
     }
 }

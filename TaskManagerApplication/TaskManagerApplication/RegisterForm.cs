@@ -161,20 +161,6 @@ namespace TaskManagerApplication
             MessageBox.Show(requirements, "Требования к паролю", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void CheckPasswordStrength_Click(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(passwordField.Text))
-            {
-                AuthSystem authSystem = new AuthSystem();
-                var strength = authSystem.CheckPasswordStrength(passwordField.Text);
-                MessageBox.Show(strength.message, "Проверка пароля", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Введите пароль для проверки", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
         private void RegisterLabel_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -234,6 +220,20 @@ namespace TaskManagerApplication
             bool hasPassword = !string.IsNullOrWhiteSpace(passwordField.Text);
 
             buttonRegister.Enabled = hasName && hasSurname && hasLogin && hasPassword;
+        }
+
+        private void CheckPasswordStrength_Click_1(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(passwordField.Text))
+            {
+                AuthSystem authSystem = new AuthSystem();
+                var strength = authSystem.CheckPasswordStrength(passwordField.Text);
+                MessageBox.Show(strength.message, "Проверка пароля", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Введите пароль для проверки", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

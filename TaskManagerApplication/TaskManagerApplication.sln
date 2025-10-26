@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagerApplication", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountWorking", "AccountWorking\AccountWorking.csproj", "{CD449E58-D97D-4DD2-99D1-F38A8DC58401}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountWorking.Tests", "AccountWorking.Tests\AccountWorking.Tests.csproj", "{9360534B-A7ED-475E-A8A1-CEB6F7D89C1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CD449E58-D97D-4DD2-99D1-F38A8DC58401}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD449E58-D97D-4DD2-99D1-F38A8DC58401}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD449E58-D97D-4DD2-99D1-F38A8DC58401}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9360534B-A7ED-475E-A8A1-CEB6F7D89C1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9360534B-A7ED-475E-A8A1-CEB6F7D89C1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9360534B-A7ED-475E-A8A1-CEB6F7D89C1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9360534B-A7ED-475E-A8A1-CEB6F7D89C1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

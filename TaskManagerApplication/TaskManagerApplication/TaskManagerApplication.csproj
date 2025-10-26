@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AccountWorking\AccountWorking.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="AccountWorking">
       <HintPath>..\AccountWorking\bin\Debug\net8.0\AccountWorking.dll</HintPath>
     </Reference>

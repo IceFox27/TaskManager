@@ -127,6 +127,7 @@ namespace AccountWorking
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
 
+                _database.OpenConnection(); 
                 using (MySqlCommand command = new MySqlCommand(
                     "SELECT * FROM `users` WHERE `login` = @uL",
                     _database.GetConnection()))
@@ -136,6 +137,7 @@ namespace AccountWorking
                     adapter.SelectCommand = command;
                     adapter.Fill(table);
                 }
+                _database.CloseConnection(); 
 
                 if (table.Rows.Count > 0)
                 {
@@ -211,7 +213,7 @@ namespace AccountWorking
                         else
                             return (false, "Ошибка при создании пользователя");
                     }
-                    catch (MySqlException ex) when (ex.Number == 1062) 
+                    catch (MySqlException ex) when (ex.Number == 1062)
                     {
                         return (false, "Пользователь с таким логином уже существует");
                     }
@@ -241,6 +243,7 @@ namespace AccountWorking
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
 
+                _database.OpenConnection(); 
                 using (MySqlCommand command = new MySqlCommand(
                     "SELECT COUNT(*) FROM `users` WHERE `login` = @uL",
                     _database.GetConnection()))
@@ -249,6 +252,7 @@ namespace AccountWorking
                     adapter.SelectCommand = command;
                     adapter.Fill(table);
                 }
+                _database.CloseConnection(); 
 
                 bool exists = table.Rows.Count > 0 && Convert.ToInt32(table.Rows[0][0]) > 0;
                 return (exists, exists ? "Пользователь существует" : "Пользователь не существует");
@@ -269,6 +273,7 @@ namespace AccountWorking
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
 
+                _database.OpenConnection();
                 using (MySqlCommand command = new MySqlCommand(
                     "SELECT * FROM `users` WHERE `login` = @uL",
                     _database.GetConnection()))
@@ -277,6 +282,7 @@ namespace AccountWorking
                     adapter.SelectCommand = command;
                     adapter.Fill(table);
                 }
+                _database.CloseConnection(); 
 
                 if (table.Rows.Count > 0)
                 {
@@ -365,7 +371,7 @@ namespace AccountWorking
                         else
                             return (false, "Не удалось удалить пользователя");
                     }
-                    catch (MySqlException ex) when (ex.Number == 1451) 
+                    catch (MySqlException ex) when (ex.Number == 1451)
                     {
                         return (false, "Невозможно удалить пользователя: имеются связанные данные");
                     }
@@ -403,7 +409,7 @@ namespace AccountWorking
 
             int strength = 0;
             string message = "";
-
+            
             if (password.Length >= MIN_PASSWORD_LENGTH) strength++;
             if (Regex.IsMatch(password, "[A-Z]")) strength++;
             if (Regex.IsMatch(password, "[a-z]")) strength++;
@@ -418,7 +424,7 @@ namespace AccountWorking
                 case 2: message = "Слабый пароль"; break;
                 default: message = "Очень слабый пароль"; break;
             }
-
+            
             return (strength, message);
         }
     }
