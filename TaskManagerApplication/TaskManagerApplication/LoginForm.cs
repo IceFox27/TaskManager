@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using AccountWorking;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,7 +26,7 @@ namespace TaskManagerApplication
         {
             Application.Exit();
         }
-
+        
         private void CloseButton_MouseEnter(object sender, EventArgs e)
         {
             closeButton.ForeColor = Color.Green;
@@ -54,29 +55,41 @@ namespace TaskManagerApplication
 
         private void ButtonLogin_Click(object sender, EventArgs e)
         {
-            String loginUser = loginField.Text;
-            String passwordUser = passwordField.Text;
+            string loginUser = loginField.Text;
+            string passwordUser = passwordField.Text;
 
-            Database database = new Database();
-
-            DataTable table = new DataTable();
-
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `login` = @uL" +
-                " AND `password` = @uP", database.GetConnection());
-
-            command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = loginUser;
-            command.Parameters.Add("@uP", MySqlDbType.VarChar).Value = passwordUser;
-
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
-
-            if (table.Rows.Count > 0)
+            if (string.IsNullOrWhiteSpace(loginUser))
             {
+                MessageBox.Show("Введите логин", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                loginField.Focus();
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(passwordUser))
+            {
+                MessageBox.Show("Введите пароль", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                passwordField.Focus();
+                return;
+            }
+
+            AuthSystem authSystem = new AuthSystem();
+
+            var loginResult = authSystem.Login(loginUser, passwordUser);
+
+            if (loginResult.success)
+            {
+                MessageBox.Show(loginResult.message, "Успешный вход", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 this.Hide();
                 MainForm mainForm = new MainForm();
                 mainForm.Show();
+            }
+            else
+            {
+                MessageBox.Show(loginResult.message, "Ошибка входа", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                passwordField.Text = "";
+                passwordField.Focus();
             }
         }
 

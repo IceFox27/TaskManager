@@ -68,7 +68,6 @@
             closeButton.Size = new Size(25, 32);
             closeButton.TabIndex = 1;
             closeButton.Text = "х";
-            closeButton.Click += СloseButton_Click;
             // 
             // label1
             // 

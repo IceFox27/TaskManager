@@ -1,0 +1,16 @@
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\AccountWorking\bin\Debug\net8.0\AccountWorking.deps.json
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\AccountWorking\bin\Debug\net8.0\AccountWorking.dll
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\AccountWorking\bin\Debug\net8.0\AccountWorking.pdb
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\AccountWorking\bin\Debug\net8.0\MySql.Data.dll
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\AccountWorking\bin\Debug\net8.0\MySql.Data.xml
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\AccountWorking\obj\Debug\net8.0\AccountWorking.csproj.AssemblyReference.cache
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\AccountWorking\obj\Debug\net8.0\AccountWorking.GeneratedMSBuildEditorConfig.editorconfig
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\AccountWorking\obj\Debug\net8.0\AccountWorking.AssemblyInfoInputs.cache
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\AccountWorking\obj\Debug\net8.0\AccountWorking.AssemblyInfo.cs
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\AccountWorking\obj\Debug\net8.0\AccountWorking.csproj.CoreCompileInputs.cache
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\AccountWorking\obj\Debug\net8.0\AccountWorking.sourcelink.json
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\AccountWorking\obj\Debug\net8.0\AccountW.96EF2841.Up2Date
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\AccountWorking\obj\Debug\net8.0\AccountWorking.dll
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\AccountWorking\obj\Debug\net8.0\refint\AccountWorking.dll
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\AccountWorking\obj\Debug\net8.0\AccountWorking.pdb
+D:\Моя папка\Лабы\ТиОПО\Program\TaskManager\TaskManagerApplication\AccountWorking\obj\Debug\net8.0\ref\AccountWorking.dll
